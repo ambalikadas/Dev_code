@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev_Coding Test</title>
+	<style>
+		body{
+			Margin:0;
+			padding:0;	
+		}
+		Table{
+			border-spacing:0;
+		}
+		td{
+			padding:0;
+		}
+		img{
+			
+			border:0;
+		}
+		.wrapper{
+		width:100%;
+			table-layout:fixed;
+			background-color:#f6f9fc;
+			padding-bottom:40px;
+		}
+		.main{
+			background-color:#ffffff;
+			margin:0 auto;
+			max-width:90%;
+			border-spacing:0;
+			font-family:sans-serif;
+			color:#171a1b;
+		}
+		.top-columns .column{
+			font-size:13px;
+			background-color:black;
+			width:100%;
+			text-align:right;
+		}
+		.top-columns .column_menu{
+			font-size:13px;
+			background-color:black;
+			width:100%;
+			text-align:right;
+		}
+		.right{
+			padding:28px 15px 25px;
+			width:900px;
+		}
+		.logo-image{
+			padding:28px 66px 24px;
+			margin-left:2%;
+		}
+		.right-text{
+			padding:10%;
+			color:white;
+			text-decoration:none;
+		}
+		.menu{
+			display:none;
+		}
+		label{
+			display:none;
+		}
+		#toggle{
+			display:none;
+		}
+		.two-columns{
+			text-align:center;align-content: padding-top:40px;
+			padding-bottom:20px;
+		}
+		.two-columns .column{
+			width:100%;
+			max-width:500px;
+			display:inline-block;
+			vertical-align:top;
+		}
+		.padding{
+			padding:15px;
+		}
+		.content{
+			font-size:15px;
+			line-height:20px;
+		}
+		.click{
+			position:absolute;
+		}
+		.overtxt{
+			position:relative;
+			padding:2px 35px 2px;
+			color:white;
+		}
+		.over{
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:4%;
+		}
+		.new{
+			background-color:black;
+			color:white;
+			padding:2%;
+		}
+		.overtxt1{
+			background-image:url(https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/cta_bg.jpg);
+			background-repeat:no-repeat;
+			padding:25px 36px 31px;
+			color:white;
+		}
+		.mb-head{
+			display:none;
+		}
+		.lg-view{
+			background-image:url(https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/d_hero_bg.jpg);
+			background-repeat:no-repeat;
+			background-size:cover;
+			color:white;
+			height:600px;
+			margin-top:-2%;
+		}
+		.view1{
+			padding: 278px 476px 176px;
+		}
+		.view2{
+			margin-left:0%;
+		}
+		.view2 span{
+			padding:17%;
+		}
+		.mb-banner{
+				display:none;
+			}
+		@media screen and (max-width:500px){
+			.over{
+			margin-bottom:8%;
+		}
+			.mb-head{
+			display:block;
+				text-align:left;
+		}
+			.new{
+			padding:9%;
+		}
+			label{
+				display:block;
+				cursor:pointer;
+				color:white;
+				font-size: 33px;
+    padding: 2px 38px 4px;
+			}
+			.menu{
+				text-align:center;
+				display:block;
+				border:2px solid black;
+				padding:20px 0 20px;
+				width:100%;
+			}
+			.nav_menu{
+		    text-align:center;	
+			padding:20px;
+				display:block;
+		}
+			#toggle:checked + .menu{
+			display:block;	
+			}
+			.right{
+				display:none;
+			}
+			.menu a {
+				padding:26px 58px 20px;
+			}
+			.view{
+				display:none;
+			}
+			.content{
+				text-align:left;
+			}
+			.lg-view{
+				display:none;
+			}
+			.mb-banner{
+				text-align:center;
+				display:block;
+			}
+			.align{
+				text-align: center;
+    width: 100%;
+			}
+		}
+		@media screen and (max-width:400px;){
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<center class="wrapper">
+	<table class="main" width="100">
+		
+<!--Logo Border-->
+		<tr>
+		<td>
+		<table>
+		<tr>
+		<td class="top-columns">
+		<table class="column">
+			<tr>
+			<td>
+			<img class="logo-image" src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/epsilon_logo.jpg" alt="logo" width="170" title="Epsilon">
+			</td>
+		<td class="column_menu">
+			<div class="right">
+		<a  class="right-text" href="">Contact Us</a>
+		<a class="right-text" href="">Find Us</a>
+		<a class="right-text" href="">My Account</a></div>
+			
+			
+			<div class="nav_menu">
+				<label for="toggle">&#9776;</label>
+				<input type="checkbox" id="toggle">
+			</div>
+		</td>
+			</tr>
+			
+		</table>
+		
+		</td>	
+		</tr>
+			
+		</table>	
+		</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<table>
+					<tr>				<td><p class="menu">
+				<a class="menu1" href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_contact_us.jpg" alt="Contact Us"></a>
+				<a class="menu1" href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_find_office.jpg" alt="My Office"></a> 
+				<a class="menu1" href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_myaccount.jpg" alt="My Account"></a>
+						</p>
+						</td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+		<td>
+			<table class="align">
+			<tr>
+			<td>
+				<div class="mb-banner">
+					<h2>WELCOME TO EPSILON</h2>
+					<img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_hero.jpg">
+				</div>
+			
+			</td></tr></table>
+		
+			</td>
+		</tr>
+		
+		<tr><td><table><tr><td><div class="lg-view">			
+			<h2 class="view1">WELCOME TO EPSILON</h2>
+			<h2 class="view2"><span>WHO WE ARE</span><span>WHAT WE DO</span></h2>
+				</div></td></tr></table></td></tr>
+		<tr>
+		<td>
+		<table width="100%" style="border-spacing:0;">
+			
+			<tr>
+			<td class="two-columns">
+			
+				<table class="column">
+				
+				<tr>
+				<td class="padding">
+					<table class="content">
+					<tr>
+					<td style="padding:10px;">
+						<h2 class="mb-head">WHO WE ARE</h2>
+						<h3>Transforming data-driven marketing into long-lasting relationships.</h3>
+						<ul style="text-align:left">
+						<li>Epsilon provides unique solutions that strategically combine analystics, rich data and technoloygy</li>
+						<li>We identify where potential customers are, where they've been and how to win their loyalty.</li>
+						<li>By partnering with the leading technology providers in each area relevant to marketing, we create powerful tools and campaigns across every channel.</li>
+						</ul>
+					</td>	
+					</tr>
+					</table>
+				</td>	
+				</tr>
+				</table>
+				
+				
+					<table class="column">
+				
+				<tr>
+				<td class="padding">
+					<table class="content">
+					<tr>
+					<td style="padding:10px;">
+						<h2 class="mb-head">WHAT WE DO</h2>
+						<h3>We make connections that bond people to brands.</h3>
+						<ul style="text-align:left">
+						<li>We figure out who you need to talk to, understand who they are, how they think and how to talk to them.</li>
+						<li>We create targeted messages that hit the right media, mindset and moment to convert them into customers.</li>
+						<li>After we'he helped you win their business, we help you win their hearts. We engage customers with your brand and turn them into your most loyal fans, so great results become sustainable results.</li>
+						</ul>
+					</td>	
+					</tr>
+					</table>
+				</td>	
+				</tr>
+				</table>
+			</td>
+			</tr>
+			
+		</table>	
+		</td>
+		</tr>
+		
+		
+		
+		
+		<tr>
+		<td>
+				<table  class="over">
+			<tr>
+			<td>		
+				<div class="overtxt1"><p style="margin-top:-4%;">Click here to know more</p></div>	
+				</td>
+					</tr>
+			</table>
+			
+		</td>
+		</tr>
+		
+		<tr>
+		<td  class="new">
+			<table>
+			<tr>
+			<td>
+				<p>Cpyright @ Epsilon 2016  Epsilon Data Managemnet, LLC. All Right Reserved | Privacy Policy | Career</p>
+			</td>	
+			</tr>
+			</table>	
+		</td>
+		</tr>
+	</table>
+	
+	</center>
+</body>
+</html>

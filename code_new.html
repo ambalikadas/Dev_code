@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width initial-scale=1.0;">
+	<style>
+		body{
+			margin:0;
+			padding:0;
+		}
+		table{
+			border-spacing:0;
+		}
+		td{
+			padding:0;
+		}
+		img{
+			border:0;
+		}
+		.wrapper{
+			width:100%;
+			table-layout:fixed;
+			background-color:#f6f9fc;
+		}
+		.main{
+			background-color:#ffffff;
+			margin:0 auto;
+			max-width:90%;
+			border-spacing:0;
+			font-family:sans-serif;
+			color:#171a1b;
+		}
+		.single-table{
+			font-size:13px;
+			background-color:black;
+			width:100%;
+		}
+		a.menu {
+  color: #fff;
+}
+label {
+  color: #fff;
+   text-align: center;
+  background-color: black;
+  cursor: pointer;
+}
+#content {
+  background-color: #9acd32;
+}
+label, #content {
+  height: 20px;
+  width: 800px;
+  margin-botton: 10px;
+  display: inline-block;
+}
+#menu-toggle {
+  display: none;
+}
+#menu {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+	border:1px solid black;
+}
+#menu-toggle:checked + #menu {
+  max-height: 100px;
+}
+	</style>
+</head>
+<body>
+	<center class="wrapper">
+	<table class="main" width="100%">
+
+<!-- Top Banner -->
+		<tr>
+		<td>
+		<table>
+		<tr>
+		<td class="single-table">
+			
+			<span><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/epsilon_logo.jpg"></span>
+<label for="menu-toggle">Toggle menu</label>
+<input type="checkbox" id="menu-toggle"/>
+<div id="menu">
+  <a href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_contact_us.jpg" alt="Contact Us"></a>
+				<a href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_find_office.jpg" alt="My Office"></a> 
+				<a href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_myaccount.jpg" alt="My Account"></a>	
+</div>
+		</td>
+		</tr>	
+		</table>
+		</td>
+		</tr>
+		
+	</table>	
+	</center>
+</body>
+</html>

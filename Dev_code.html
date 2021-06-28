@@ -73,7 +73,8 @@
 			display:none;
 		}
 		.two-columns{
-			text-align:center;align-content: padding-top:40px;
+			text-align:center;
+			align-content: padding-top:40px;
 			padding-bottom:20px;
 		}
 		.two-columns .column{
@@ -83,7 +84,10 @@
 			vertical-align:top;
 		}
 		.padding{
-			padding:15px;
+			padding:2px 16px 2px;
+		}
+		h2{
+			font-size:20px;
 		}
 		.content{
 			font-size:15px;
@@ -118,7 +122,7 @@
 			margin-top:-2%;
 		}
 		.view1{
-			padding: 278px 476px 176px;
+			padding: 278px 501px 176px;
 		}
 		.view2{
 			margin-left:0%;
@@ -129,16 +133,63 @@
 		.mb-banner{
 				display:none;
 			}
-		a{
-				text-decoration:none;
-				color:white;
-				cursor:pointer;
+		a {
+		text-decoration:none;
+			color:white;
+		}
+		.content{
+				text-align:left;
 			}
 		@media screen and (max-width:500px){
+										a.menu {
+  color: #fff;
+}
+label {
+  color: #fff;
+   text-align: center;
+  background-color: black;
+  cursor: pointer;
+}
+#content {
+  background-color: #9acd32;
+	
+}
+label, #content {
+	margin-right:14px;
+  height: 20px;
+  display: inline-block;
+	font-size:28px;
+	float:right;
+	margin-top:-75px;
+	
+}
+#menu-toggle {
+  display: none;
+}
+#menu {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+	border:1px solid black;
+}
+#menu-toggle:checked + #menu {
+  max-height: 100px;
+}
+		#menu a{
+			padding:11px 50px 8px;
+			display: inline-block;
+    border: 1px solid black;
+			border-collapse: collapse;
+		}
 			.logo-image1{
 			padding:28px 66px 24px;
-			margin-left:-15px;
+			margin-left:-48px;
 				float:left;
+				margin-right:134px;
 		}
 			.logo-image{
 			display:none;	
@@ -179,7 +230,7 @@
 			}
 			a{
 				text-decoration:none;
-				color:white;
+				color:black;
 				cursor:pointer;
 			}
 
@@ -187,47 +238,8 @@
 		@media screen and (max-width:400px;){
 			
 		}
-							a.menu {
-  color: #fff;
-}
-label {
-  color: #fff;
-   text-align: center;
-  background-color: black;
-  cursor: pointer;
-}
-#content {
-  background-color: #9acd32;
-}
-label, #content {
-	margin-right:21px;
-  height: 20px;
-  display: inline-block;
-	font-size:28px;
-	float:right;
-	margin-top:-75px;
-}
-#menu-toggle {
-  display: none;
-}
-#menu {
-  background-color: white;
-  width: 100%;
-  overflow: hidden;
-  max-height: 0;
-  padding: 0;
-  margin: 0 auto;
-  -webkit-transition: all 0.3s ease;
-	border:1px solid black;
-}
-#menu-toggle:checked + #menu {
-  max-height: 100px;
-}
-		#menu a{
-			padding:11px 34px 8px;
-			display: inline-block;
-    border: 1px solid black;
-			border-collapse: collapse;
+		.overtxt1 a{
+			color:white;
 		}
 	</style>
 </head>

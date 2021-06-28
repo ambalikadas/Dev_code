@@ -37,6 +37,13 @@
 			width:100%;
 			text-align:right;
 		}
+		.column_mb{
+			display:none;
+			font-size:13px;
+			background-color:black;
+			width:100%;
+			text-align:center;
+		}
 		.top-columns .column_menu{
 			font-size:13px;
 			background-color:black;
@@ -123,6 +130,17 @@
 				display:none;
 			}
 		@media screen and (max-width:500px){
+			.logo-image1{
+			padding:28px 66px 24px;
+			margin-left:-15px;
+				float:left;
+		}
+			.logo-image{
+			display:none;	
+			}
+			.column_mb{
+			display:block;
+		}
 			.over{
 			margin-bottom:8%;
 		}
@@ -133,31 +151,9 @@
 			.new{
 			padding:9%;
 		}
-			label{
-				display:block;
-				cursor:pointer;
-				color:white;
-				font-size: 33px;
-    padding: 2px 38px 4px;
-			}
-			.menu{
-				text-align:center;
-				display:block;
-				border:2px solid black;
-				padding:20px 0 20px;
-				width:100%;
-			}
-			.nav_menu{
-		    text-align:center;	
-			padding:20px;
-				display:block;
-		}
-			
+		
 			.right{
 				display:none;
-			}
-			.menu a {
-				padding:26px 58px 20px;
 			}
 			.view{
 				display:none;
@@ -176,11 +172,53 @@
 				text-align: center;
     width: 100%;
 			}
+
 		}
 		@media screen and (max-width:400px;){
 			
 		}
-		
+							a.menu {
+  color: #fff;
+}
+label {
+  color: #fff;
+   text-align: center;
+  background-color: black;
+  cursor: pointer;
+}
+#content {
+  background-color: #9acd32;
+}
+label, #content {
+	margin-right:21px;
+  height: 20px;
+  display: inline-block;
+	font-size:28px;
+	float:right;
+	margin-top:-75px;
+}
+#menu-toggle {
+  display: none;
+}
+#menu {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+	border:1px solid black;
+}
+#menu-toggle:checked + #menu {
+  max-height: 100px;
+}
+		#menu a{
+			padding:11px 34px 8px;
+			display: inline-block;
+    border: 1px solid black;
+			border-collapse: collapse;
+		}
 	</style>
 </head>
 <body>
@@ -203,36 +241,37 @@
 		<a  class="right-text" href="">Contact Us</a>
 		<a class="right-text" href="">Find Us</a>
 		<a class="right-text" href="">My Account</a></div>
-			
-			
-			<div class="nav_menu">
-				<label for="toggle">&#9776;</label>
-				<input type="checkbox" id="toggle">
-			</div>
 		</td>
 			</tr>
-			
 		</table>
-		
 		</td>	
 		</tr>
-			
+		</table>	
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<table class="column_mb">
+		<tr>
+		<td>
+			<div>
+			<span><img class="logo-image1" src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/epsilon_logo.jpg" alt="logo" width="170" title="Epsilon"></span>
+				<div class="right1">
+		<label for="menu-toggle">&#9776;</label>
+<input type="checkbox" id="menu-toggle"/>
+					
+<div id="menu">
+  <a href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_contact_us.jpg" alt="Contact Us"></a>
+				<a href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_find_office.jpg" alt="My Office"></a> 
+				<a href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_myaccount.jpg" alt="My Account"></a>	
+</div>	
+				</div></div>
+		</td>	
+		</tr>	
 		</table>	
 		</td>
 		</tr>
 		
-		<tr>
-			<td>
-				<table>
-					<tr>				<td><p class="menu" style="display:none;">
-				<a class="menu1" href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_contact_us.jpg" alt="Contact Us"></a>
-				<a class="menu1" href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_find_office.jpg" alt="My Office"></a> 
-				<a class="menu1" href=""><img src="https://mettl-arq.s3-ap-southeast-1.amazonaws.com/questions/epsilon/email_fes/m_myaccount.jpg" alt="My Account"></a>
-						</p>
-						</td></tr>
-				</table>
-			</td>
-		</tr>
 		<tr>
 		<td>
 			<table class="align">
